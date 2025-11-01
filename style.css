@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.logo {
+  color: skyblue;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #4de4ff;
+  border-bottom: 2px solid skyblue;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  min-height: 90vh;
+  gap: 100px;
+}
+
+.image-container {
+  width: 320px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff4d4d 60%, transparent 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 120%;
+  border-radius: 10px;
+}
+
+.content {
+  max-width: 550px;
+}
+
+.content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.content h1 span,
+.content h2 span {
+  color: deepskyblue;
+}
+
+.content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: #bbb;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 60px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+.social-links a[href*="github"] {
+  color: #171515; /* warna GitHub */
+}
+
+.social-links a[href*="linkedin"] {
+  color: #0077b5; /* warna LinkedIn */
+}
+
+.social-links a[href*="instagram"] {
+  color: #e4405f; /* warna Instagram */
+}
+
+.social-links a[href*="x.com"],
+.social-links a[href*="twitter"] {
+  color: #000000; /* warna X (Twitter) */
+}
+
+.social-links a[href*="youtube"] {
+  color: #ff0000; /* warna YouTube */
+}
+.socials a:hover {
+  color: #ff4d4d;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid  skyblue;
+    border-radius: 50px;
+    color: skyblue;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    background: skyblue;
+    color: white;
+    box-shadow: 0 0 15px skyblue;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+}
